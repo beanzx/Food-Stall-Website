@@ -1,0 +1,1512 @@
+/* NAVIGATION MENU */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav a{
+    display: block;   
+    text-align: center;
+    text-decoration: none;
+    height: 20px; 
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none
+}
+ul{
+    list-style-type: none;
+}
+body{
+    background-color: #191818;
+}
+.main {
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1266px;
+    padding-top: 100px;
+}
+#navigation ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 40px;
+    padding: 30px 20px 10px 20px;
+}
+#navigation a{
+    text-decoration: none;
+    color: white;
+    
+}
+#navigation{
+    background-color: #191818;
+    padding: 10px 0;
+    transition: top 0.3;
+}
+#navigation.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 20px;
+    background-color: #292828; 
+}
+#store-name{
+    height: 30px;
+}
+#facebook{
+    padding-left: 50%;
+    height: 25px;
+    width: 25px;
+    border-left: 2px solid white;
+}
+/* BANNER */
+hr{
+    border: 5px solid brown;
+}
+#banner{
+    background-image: url(../pictures/banner.jpg);
+    image-rendering: -webkit-optimize-contrast;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+#homepagebutton{
+    border: 3px solid #191818;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: rgb(234, 120, 21);
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+div a:link{
+    color: white;
+}
+div a:visited{
+    color: white;
+}
+div a:hover{
+    color: yellow;
+}
+div a:active{
+    color: red;
+}
+/* FRONT ABOUT US PAGE*/
+#frontaboutus{
+    display: flex;
+    padding: 6% 6% 3% 6%;
+    color: white;
+    background-color: #191818;
+}
+.box1{
+    background-image: url(../pictures/stallbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box1 img{
+    position: relative;
+    top: 5%;
+    left: 40%;
+}
+.box2{
+    background-color: #cec5b4;
+    padding: 95px 140px 0px 140px;
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+#aboutbutton{
+    display: block;
+    margin-left: 70%;
+    background-color:  rgb(234, 120, 21);
+    font-size: 20px;
+    padding: 10px 20px;
+    max-width: 20%;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid grey;
+    cursor: pointer;
+}
+/* SPECIALITIES */
+#signature{
+    background-color: #191818;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    padding-left: 10%;
+}
+#signaturebox{
+    padding: 0 10% 2% 10%;
+}
+.signaturecontent{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 90px;
+}
+.signaturepic img{
+    border-radius: 50px;
+}
+.signaturepic{
+    display: flex;
+    justify-content: center;
+}
+.signaturecontent h1{
+    font-size: 2em;
+}
+.signaturecontent span{
+    font-size: 1.2em;
+    background-color: brown;
+}
+#signbutton{
+    margin-top: 20px;
+    background-color: rgb(216, 103, 4);
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+/* OTHER RECOMMENDATIONS */
+#otherreco{
+    padding-left: 40px;
+    padding: 20px 50px 50px 90px;
+    justify-content: center;
+    background-color: #191818;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 5fr;
+}
+.recotitle{
+
+    margin-top: 20px;
+    text-align: center;
+    grid-column: 1/ span 3;
+    grid-row: 1/span 1;
+}
+#otherreco img{
+    padding-top: 30px;
+    width: 90%;
+}
+.recotag{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.reco:hover{
+    background-color: rgb(216, 103, 4);
+}
+.reco{
+    text-align: center;
+}
+.reco h2, .reco h3{
+    padding-left: 20px;
+    text-align: justify;
+}
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.footercontent {
+    max-width: 1266px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.footersection {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+.footersection h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.footersection p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+#detailsfooter div{
+    padding: 5px;
+}
+.footersection a img {
+    width: 40px;
+    margin: 5px;
+}
+#footerh3{
+    text-align: left;
+}
+#navfooter{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    text-align: left;
+    padding-left: 30px;
+    max-height: 150px;
+}
+#detailsfooter img{
+    float: left;
+    width: 20px;
+    margin-left: 5%;
+}
+#detailsfooter div p{
+    margin-left: 40px;
+    position: relative;
+    bottom: 2px;
+}
+/* .footersection img{
+    width: 45%;
+    position: relative;
+    right: 26%;
+    border-radius: 10px;
+    padding-bottom: 5px;
+} */
+#detailsfooter h3{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.footerbottom {
+    border-top: 1px solid #444;
+    padding: 10px;
+    font-size: 14px;
+}
+#openingh3{
+    text-align: left;
+}
+#openingfooter{
+    text-align: center;
+    padding-left: 60px;
+}
+#navfooter a{
+    font-size: 16px;
+}
+.footercontent form{
+    margin-top: 10px;
+}
+#footerinput{
+    background-color: #807c7c;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    height: 2.4em;
+}
+#footeremail{
+    display: flex;
+}
+#footerbutton{
+    background-color: orange;
+    border-radius: 20px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+/* Member Registration Form */
+#member{
+    background-image: url(../pictures/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fieldset{
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    background-color: #222;
+}
+#member h1{
+    color: red;
+    text-align: center;
+    padding-top: 40px;
+}
+#h3{
+    padding-top: 5px;
+    text-align: center;
+}
+form label{
+    display: block;
+    margin-bottom: 8px;
+}
+#member fieldset div{
+    margin: 30px 15%;
+}
+label{
+    font-weight: bolder;
+}
+.input{
+    border: 1px solid #ccc;
+    background-color: #807c7c;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    height: 2.4em;
+}
+#button{
+    text-align: center;
+    margin-top: 10%;
+}
+.button1{
+    border-radius: 20px;
+    text-align: center;
+    width: 30%;
+    height: 2.5em;
+    position: relative;
+    left: 55%;
+    background-color: rgb(255, 119, 0);
+    cursor: pointer;
+}
+.button2{
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 1%;
+    width: 30%;
+    position: relative;
+    right: 10%;
+    height: 2.5em;
+    background-color: rgb(255, 209, 169);
+    cursor: pointer;
+}
+::placeholder {
+    color: rgb(63, 60, 60);
+  }
+/* ABOUTUS */
+#aboutus {
+    padding: 30px;
+    background-color: #191818;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#aboutmain{
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1266px;
+}
+#aboutbanner{
+    text-align: center;
+    background-color: #191818;
+    position: relative;
+}
+#aboutbanner h1{
+    color: white;
+    isolation: isolate;
+    font-size: 2.5em;
+    padding: 7% 10% 10% 4%;
+}
+#aboutbanner::before{
+    background-image: url(../pictures/stallpic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    filter: blur(5px);
+}
+.aboutdetails{
+    background-color: #333;
+    color: white;
+    margin: 2% auto;
+    border-radius: 10px;
+    text-align: left;
+    max-height: 350px;
+    font-size: 1.1em;
+    word-spacing: 1px;
+    max-width: 63%;
+    padding: 4%;
+    display: flex;
+}
+#contact p, #vision p, #chef p{
+    padding: 4%;
+    font-size: 1.2em;
+    text-align: justify;
+    padding-right: 8%;
+}
+#chef h2, #chef h3{
+    padding-left: 4%;
+    color: red;
+}
+#chef p{
+    max-width: 900px;
+}
+.aboutheading{
+    color: red;
+    size: 9em;
+    font-weight: 900;
+}
+.aboutimg{
+    width: 90%;
+    height: 90%;
+    min-width: 150px;
+}
+.otheraboutimg{
+    width: 50%;
+    height: 50%;
+    min-width: 150px;
+}
+#testimonials{
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1266px;
+}
+.section{
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 8%;
+}
+#rates{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 10px;
+}
+.rating{
+    margin: 3%;
+    padding: 3%;
+}
+.ratingword{
+    position: relative;
+    right: 0;
+    top: 50px;
+    margin: 10px;
+}
+.profilesetting{
+    display: flex;
+    padding: 2%;
+}
+.star{
+    color: orange;
+    font-size: 1.2em;
+}
+.rating p{
+    padding: 2%;
+}   
+/* MENU */
+#menubanner{
+    text-align: center;
+    padding: 7%;
+    font-size: 2em;
+    color: white;
+    position: relative;
+}
+#menubanner::before{
+    background-image: url(../pictures/menubackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content:'';
+    position:absolute;
+    inset: 0;
+    filter: blur(8px);
+}
+#foodbanner{
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1266px;
+}
+#menubanner h1{
+    isolation: isolate;
+}
+.menubar{
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1266px;
+}
+#foodnav{
+    margin-left: 8%;
+}
+
+#foodnav li{
+    padding: 10px 50px;
+    margin: 10px;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    list-style-type: none;
+}
+#foodnav ul{
+    display:flex;
+    justify-content: flex-start;
+}
+#foodnav li a:visited{
+    color: white;
+}
+#foodnav li:hover{
+    background-color: red;
+}
+#heading{
+    color: white;
+    margin: 50px 0 5px 9%;
+    font-size: 2em;
+}
+#all{
+    background-color: rgb(214, 13, 13);
+}
+.grey{
+    background-color: rgb(92, 89, 89);
+}
+#menupic{
+    padding-left: 40px;
+    padding: 20px 50px 50px 90px;
+    justify-content: center;
+    background-color:#191818;
+    color: white;
+}
+.flex{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    margin-bottom: 6%;
+}
+.food img{
+    padding-top: 30px;
+    width: 80%;
+}
+#sides,#rice,#hotplate,#noodles{
+    font-size: 2em;
+}
+.sidetag{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.menutag{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.food:hover{
+    background-color: rgb(216, 103, 4);
+}
+.food{
+    background-color: grey;
+    border-radius: 20px;
+    text-align: center;
+}
+.food h2, .food h3{
+    padding-left: 20px;
+    text-align: justify;
+}
+#arrowup{
+    position: fixed;
+    left: 96%;
+    bottom: 3%;
+}
+#arrowup img{
+    width: 70%;
+}
+/* order */
+#order{
+    background-image: url(../pictures/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ordermain{
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1266px;
+}
+#order h1{
+    color: red;
+    text-align: center;
+    padding-top: 40px;
+}
+.h3{
+    padding-top: 5px;
+    text-align: center;
+}
+.orderflex{
+    display: flex;
+    margin: 1% 5% 5% 5%;
+}
+.orderflex div{
+    padding-left: 18%;
+}
+.labelorder{
+    font-size: 1.1em;
+}
+.comments{
+    background-color: #807c7c;
+    border-radius: 20px;
+    width: 78%;
+    border: 1px solid #ccc;
+}
+.marginleft{
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+.inputorder{
+    padding: 5%;
+    min-width: 125%;
+    background-color: #807c7c;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+.quantity{
+    padding: 7%;
+    width: 20%;
+    background-color: #807c7c;
+    border-radius: 20px;
+}
+.flexquan{
+    position: relative;
+    top: 28px;
+}
+#order fieldset{
+    position: relative;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    color: white;
+    padding-bottom: 2%;
+    background-color: #222;
+}
+#button1{
+    background-color: orange;
+    cursor: pointer;
+}
+#button2{
+    background-color: rgb(255, 209, 169);
+    cursor: pointer;
+}
+.button{
+    margin: 10px 0;
+    position: relative;
+    left: 49%;
+    border-radius: 20px;
+    padding: 5px 30px;
+}
+#order form{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* SIGN IN */
+#signin {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+}
+#footersignup{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    width: 1266px;
+    display: flex;
+}
+.left {
+    flex: 0.4; 
+    display: flex;
+    font-size: 24px;
+    background-image: url(../pictures/banner.jpg);
+}
+.right {
+    flex: 0.6; 
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+}
+.container {
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+.container h1 {
+    margin-bottom: 20px;
+    color: red;
+}
+.container p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+}
+.formgroup input{
+    background-color: #807c7c;
+}
+.formgroup {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.formgroup label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.formgroup input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.signinbutton {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 105%;
+}
+.signinbutton:hover {
+    background-color: #0056b3;
+}
+.signinmain{
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1266px;
+}
+@media screen and (max-width: 480px){
+    #index{
+        max-width: 480px;
+    }
+    #frontaboutus{
+        flex-direction: column;
+    }
+    #banner img{
+        width: 50%;
+    }
+    #frontaboutus{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10%;
+    }
+    #orderbutton, #aboutbutton, #signbutton {
+        text-align: center;
+    }
+    .box{
+        flex: 1 1 100%;
+    }
+    #homepagebutton{
+        max-width: 15%;
+        font-size: 70%;
+        border: 2px solid black;
+    }
+    .box1 img{
+        width: 20%;
+        height: 30%;
+    }
+    .box2{
+        padding: 10%;
+        font-size: 13px;
+    }
+    #aboutbutton{
+        padding: 10px 20px 10px 5px;
+        font-size: 80%;
+        max-width: 6%;
+    }
+    .signaturecontent{
+        font-size: 60%;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .signaturepic img{
+        margin-top: 40px;
+        width: 100%;
+        height: 70%;
+    }
+    #signbutton{
+        font-size: 100%;
+        max-width: 30%;
+    }
+    #signature{
+        padding: 10% 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #otherreco{
+        padding: 0 10px 0 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 300px;
+    }
+    .recotitle h1{
+        font-size: 20px;
+    }
+    .reco img{
+        max-width: 100px;
+        min-width: 100px;
+    }
+    .reco h2{
+        font-size: 60%;
+    }
+    .reco{
+        max-height: 70%;
+    }
+    #order fieldset{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .inputorder{
+        width: 40%;
+    }
+    .input{
+        width: 180px;
+    }
+    #fieldset{
+        font-size: 60%;
+    }
+    #orderform h1{
+        padding-top: 0%;
+    }
+    #orderbutton{
+        position: relative;
+        right: 47%;
+    }
+    .ordermain{
+        padding-top: 10%;
+    }
+    .footercontent{
+        padding: 0 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #foodbanner{
+        font-size: 80%;
+    }
+    #menubanner{
+        min-height: 100px;
+    }
+    #openingfooter{
+        padding-left: 0;
+    }
+    #navfooter{
+        padding-left: 0;
+    }
+    #detailsfooter{
+        padding-left: 0;
+    }
+    #foodmenu{
+        max-width: 480px;
+    }
+    #menupic{
+        font-size: 70%;
+    }
+    #foodnav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .labelorder{
+        font-size: 90%;
+    }
+    .flexquan input{
+        width: 40%;
+    }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .food{
+        max-width: 90%;
+    }
+    .menutag{
+        font-size: 90%;
+    }
+    #arrowup img{
+        width: 10%;
+        position: fixed;
+        right: 10%;
+        bottom: 5%;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+    .left{
+        max-height: 50px;
+    }
+    #fieldset{
+        padding: 20%;
+    }
+    .aboutdetails{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 70%;
+    }
+    #contactimg img{
+        height: 70%;
+        width: 90%;
+    }
+    #contactimg{
+        max-width: 75%;
+    }
+    .aboutimg{
+        padding: 2%;
+    }
+    #testimonials{
+        font-size: 70%;
+    }
+    #rates{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .otheraboutimg img{
+        height: 0px;
+    }
+    #foodnav{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profilesetting img{
+        width: 20px;
+    }
+    #store-name{
+        width: 0px;
+    }
+    #facebook{
+        border: 0;
+        width: 0;
+    }
+    #mainmenu li{
+        padding: 0 4px;
+    }
+    #member fieldset div{
+        margin: 0;
+    }
+    #fieldset .input{
+        margin: 10px;
+        width: 90%;
+    }
+    .aboutimg{
+        min-width: 45%;
+    }
+    #fieldset #button{
+        margin: 10%;
+    }
+    .button2{
+        width: 50px;
+        position: relative;
+        right: 55px;
+
+    }
+    .button1{
+        width: 50px;
+        position: relative;
+        right: 0;
+    }
+}
+@media screen and (min-width: 538px) and (max-width: 750px) {
+    #index{
+        max-width: 538px;
+    }
+    #frontaboutus{
+        flex-direction: column;
+    }
+    #banner img{
+        width: 50%;
+    }
+    #frontaboutus{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10%;
+    }
+    #orderbutton, #aboutbutton, #signbutton {
+        text-align: center;
+    }
+    .box{
+        flex: 1 1 100%;
+    }
+    #homepagebutton{
+        max-width: 15%;
+        font-size: 70%;
+        border: 2px solid black;
+    }
+    .box1 img{
+        width: 20%;
+        height: 30%;
+    }
+    .box2{
+        padding: 10%;
+        font-size: 13px;
+    }
+    #aboutbutton{
+        padding: 10px 20px 10px 5px;
+        font-size: 80%;
+        max-width: 6%;
+    }
+    .signaturecontent{
+        font-size: 60%;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .signaturepic img{
+        margin-top: 40px;
+        width: 100%;
+        height: 70%;
+    }
+    #signbutton{
+        font-size: 100%;
+        max-width: 30%;
+    }
+    #signature{
+        padding: 10% 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #otherreco{
+        padding: 0 10px 0 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 300px;
+    }
+    .recotitle h1{
+        font-size: 20px;
+    }
+    .reco img{
+        max-width: 100px;
+        min-width: 100px;
+    }
+    .reco h2{
+        font-size: 60%;
+    }
+    .reco{
+        max-height: 70%;
+    }
+    #order fieldset{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .inputorder{
+        width: 40%;
+    }
+    .input{
+        width: 180px;
+    }
+    #fieldset{
+        font-size: 60%;
+    }
+    #orderform h1{
+        padding-top: 0%;
+    }
+    #orderbutton{
+        position: relative;
+        right: 47%;
+    }
+    .ordermain{
+        padding-top: 10%;
+    }
+    .footercontent{
+        padding: 0 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #foodbanner{
+        font-size: 80%;
+    }
+    #menubanner{
+        min-height: 100px;
+    }
+    #openingfooter{
+        padding-left: 0;
+    }
+    #navfooter{
+        padding-left: 0;
+    }
+    #detailsfooter{
+        padding-left: 0;
+    }
+    #foodmenu{
+        max-width: 480px;
+    }
+    #menupic{
+        font-size: 70%;
+    }
+    #foodnav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .labelorder{
+        font-size: 90%;
+    }
+    .flexquan input{
+        width: 40%;
+    }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .food{
+        max-width: 90%;
+    }
+    .menutag{
+        font-size: 90%;
+    }
+    #arrowup img{
+        width: 10%;
+        position: fixed;
+        right: 10%;
+        bottom: 5%;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+    .left{
+        max-height: 50px;
+    }
+    #fieldset{
+        padding: 20%;
+    }
+    .aboutdetails{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 70%;
+    }
+    #contactimg img{
+        height: 70%;
+        width: 90%;
+    }
+    #contactimg{
+        max-width: 75%;
+    }
+    .aboutimg{
+        padding: 2%;
+    }
+    #testimonials{
+        font-size: 70%;
+    }
+    #rates{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .otheraboutimg img{
+        height: 0px;
+    }
+    #foodnav{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profilesetting img{
+        width: 20px;
+    }
+    #store-name{
+        width: 100px;
+    }
+    #mainmenu li{
+        padding: 0 4px;
+    }
+    #member fieldset div{
+        margin: 0;
+    }
+    #fieldset .input{
+        margin: 10px;
+        width: 90%;
+    }
+    .aboutimg{
+        min-width: 45%;
+    }
+    #fieldset #button{
+        margin: 10%;
+    }
+    .button2{
+        width: 50px;
+        position: relative;
+        right: 55px;
+
+    }
+    .button1{
+        width: 50px;
+        position: relative;
+        right: 0;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1030px) {
+    #index{
+        max-width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #frontaboutus{
+        flex-direction: column;
+    }
+    #banner img{
+        width: 50%;
+    }
+    #frontaboutus{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10%;
+    }
+    #orderbutton, #aboutbutton, #signbutton {
+        text-align: center;
+    }
+    .box{
+        flex: 1 1 100%;
+    }
+    #homepagebutton{
+        max-width: 15%;
+        font-size: 70%;
+        border: 2px solid black;
+    }
+    .box1 img{
+        width: 20%;
+        height: 30%;
+    }
+    .box2{
+        padding: 10%;
+        font-size: 20px;
+    }
+    #aboutbutton{
+        padding: 10px 20px 10px 5px;
+        font-size: 80%;
+        max-width: 6%;
+    }
+    .signaturecontent{
+        font-size: 85%;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .signaturepic img{
+        margin-top: 20px;
+        width: 60%;
+        height: 80%;
+    }
+    #signbutton{
+        font-size: 100%;
+        max-width: 30%;
+    }
+    #signature{
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #otherreco{
+        padding: 0 10px 0 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 500px;
+    }
+    .recotitle h1{
+        font-size: 20px;
+    }
+    .reco img{
+        max-width: 200px;
+        min-width: 200px;
+    }
+    .reco h2{
+        font-size: 70%;
+    }
+    .reco{
+        max-height: 70%;
+    }
+    #order fieldset{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .inputorder{
+        width: 40%;
+    }
+    .input{
+        width: 180px;
+    }
+    #fieldset{
+        font-size: 80%;
+    }
+    #orderform h1{
+        padding-top: 0%;
+    }
+    #orderbutton{
+        position: relative;
+        right: 30%;
+    }
+    .ordermain{
+        padding-top: 10%;
+    }
+    .footercontent{
+        padding: 0 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #foodbanner{
+        font-size: 80%;
+    }
+    #menubanner{
+        min-height: 100px;
+    }
+    #openingfooter{
+        padding-left: 0;
+    }
+    #navfooter{
+        padding-left: 0;
+    }
+    #detailsfooter{
+        padding-left: 0;
+    }
+    #foodmenu{
+        max-width: 750px;
+    }
+    #menupic{
+        font-size: 80%;
+    }
+    #foodnav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .labelorder{
+        font-size: 90%;
+    }
+    .flexquan input{
+        width: 40%;
+    }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .food{
+        max-width: 90%;
+    }
+    .menutag{
+        font-size: 95%;
+    }
+    #arrowup img{
+        width: 10%;
+        position: fixed;
+        right: 10%;
+        bottom: 5%;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+    .left{
+        max-height: 50px;
+    }
+    #fieldset{
+        padding: 7%;
+    }
+    .aboutdetails{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 75%;
+    }
+    #contactimg img{
+        height: 40%;
+        width: 90%;
+    }
+    .aboutdetails{
+        min-height: 400px;
+    }
+    #contactimg{
+        max-width: 75%;
+    }
+    .aboutimg{
+        padding: 1%;
+    }
+    #testimonials{
+        font-size: 70%;
+    }
+    #rates{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .otheraboutimg img{
+        max-height: 200px;
+    }
+    #foodnav{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profilesetting img{
+        width: 20px;
+    }
+    #store-name{
+        width: 60px;
+    }
+    #mainmenu li{
+        padding: 0 4px;
+    }
+    #signin{
+        margin: 20%;
+    }
+    #member fieldset div{
+        margin: 0;
+    }
+    #fieldset .input{
+        margin: 10px;
+        width: 90%;
+    }
+    .aboutimg{
+        min-width: 45%;
+    }
+    #fieldset #button{
+        margin: 10%;
+    }
+    .button2{
+        width: 80px;
+    }
+    .button1{
+        width: 80px;
+        
+    }
+}
+  
+
+

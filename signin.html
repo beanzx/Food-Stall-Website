@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMO Japanese Food</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <nav id="navigation">
+        <ul  class="main">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="foodmenu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><img src="../E1_241872D_Joycelyn_JapaneseCuisine/pictures/storename.png" title="store-name" alt="store-name" id="store-name"></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="https://www.facebook.com/SumoJapaneseFood/"><img src="pictures/facebook-new.png" title="facebook" alt="facebook" id="facebook"></a></li>
+        </ul>
+        <hr>
+    </nav>
+    <main id="signin" class="signinmain">
+        <div class="wrapper">
+            <div class="left"></div>
+            <div class="right">
+                <div class="container">
+                    <h1>Login Into Your Account</h1>
+                    <p>SUMO Japanese Food</p>
+                    <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" >
+                        <div class="formgroup">
+                            <label>Username</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="formgroup">
+                            <label>Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="formgroup">
+                            <label>Password</label>
+                            <input type="password" id="password" name="password"  minlength="16" required>
+                        </div>
+                        <div>
+                            <input type="submit" value="Login" class="signinbutton">
+                        </div>
+                    </form>
+                    <br>
+                    <div id="footersignup">
+                        <a href="forget.html" class="signinwords">Forget Password</a>
+                        <a href="member.html" class="siginwords">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="main">
+            <div class="footercontent">
+                <div class="footersection">
+                    <h2 id="footerh3">SUMO Japanese</h2>
+                    <p>The Orginal Japanese Stall from NYP, stay up to date on the latest menu</p>
+                    <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" >
+                        <div id="footeremail">
+                            <input name="email" type="email" required id="footerinput" placeholder="Username@gmail.com">
+                            <input type="submit"  value="&rarr;" id="footerbutton">
+                        </div>
+                    </form>
+                </div>
+                <div class="footersection" id="openingfooter">
+                    <h3 id="openingh3">Opening hours</h3>
+                    <p>Mon-Fri: 7.00-18.30</p>
+                    <p>Sat-Sun: Closed</p>
+                </div>
+                <div class="footersection" id="navfooter">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="foodmenu.html">Menu</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="signin.html">Member</a></li>
+                    </ul>
+                </div>
+                <div class="footersection" id="detailsfooter">
+                    <h3>Contact Info</h3>
+                    <div>
+                        <img src="pictures/phone-white.png" alt="phone" title="phone">
+                        <p>8328 1510</p>
+                    </div>
+                    <div>
+                        <img src="pictures/email-envelope-white-icon.png" alt="email" title="email">
+                        <p id="wordwrap">sumojapanesefood@hotmail.com</p>
+                    </div>
+                    <div>
+                        <img src="pictures/location-pointer-white-icon.png" alt="location" title="location">
+                        <p>180 Ang Mo Kio Ave 8 Block A,  SG 569830</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footerbottom">
+                <p>&copy; 2024 NYP Sumo Japanese Food. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const nav = document.getElementById('navigation');
+        const stickyOffset = nav.offsetTop;
+        function toggleStickyNav() {
+            if (window.pageYOffset >= stickyOffset) {
+                nav.classList.add('sticky');
+            } else {
+                nav.classList.remove('sticky');
+            }
+        }
+        window.onscroll = function() {
+            toggleStickyNav();
+        };
+    </script>
+</body>
+</html>
